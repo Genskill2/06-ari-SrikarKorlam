@@ -1,4 +1,6 @@
-float letter(string s[]){
+#include<cs50.h>
+
+float letter(string s){
   float count=0;
    for(int i=0;i<strlen(s);i++){
     if(isalnum(s[i])!=0)
@@ -7,7 +9,7 @@ float letter(string s[]){
 return count;
 }
 
-float words(string s[]){
+float words(string s){
   float count=0;
    for(int i=0;i<strlen(s);i++){
     if(s[i]==' ')
@@ -16,7 +18,7 @@ float words(string s[]){
 return count;
 }
 
-float sentence(string s[]){
+float sentence(string s){
   float count=0;
    for(int i=0;i<strlen(s);i++){
     if(s[i]=='.' || s[i]=='?')
@@ -25,7 +27,7 @@ float sentence(string s[]){
 return count;  
 }
 
-string ari(string s[]){
+string ari(string s){
 string grade[] ={"Kindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade",  "Sixth Grade","Seventh Grade","Eight Grade","Ninth Grade","Tenth Grade","Eleventh Grade",        "Twelfth Grade","College Student","Professor"};
   
   int num[14]={1,2,3,4,5,6,7,8,9,10,11,12,13,14};
